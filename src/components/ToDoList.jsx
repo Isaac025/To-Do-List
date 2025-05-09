@@ -172,7 +172,7 @@ const ToDoList = () => {
                     <div>
                       <button
                         onClick={() => saveEdit(originalIndex)}
-                        className="text-green-500"
+                        className="text-green-500 mr-3"
                       >
                         Save
                       </button>
@@ -183,7 +183,10 @@ const ToDoList = () => {
                     </div>
                   ) : (
                     <div>
-                      <button onClick={() => startEditing(originalIndex)}>
+                      <button
+                        onClick={() => startEditing(originalIndex)}
+                        className="mr-3"
+                      >
                         <FaPencil color="#008000" size={20} />
                       </button>
                       <button onClick={() => deleteTask(originalIndex)}>
