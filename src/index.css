@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+.myform {
+  @apply w-full max-w-[400px] rounded-xl p-2.5 mx-auto my-4 shadow-lg;
+}
